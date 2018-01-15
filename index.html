@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Generic TSP</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<!-- Bootstrap Core CSS file -->
+		<link rel="stylesheet" href="bootstrap.min.css">
+		<link rel="stylesheet" href="styles.css">
+
+	</head>
+	<body>
+		<!-- Page Content -->
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-sm-12">
+					<div class="page-header">
+						<h1>Generic algorithm for TSP</h1>
+					</div>
+				</div>
+			</div>
+			<!-- /.row -->
+
+			<div class="row margin-b-2">
+				<div class="col-sm-6">
+					<canvas width="570" height="570" id="bestAlgorithmPlot">
+				</div>
+				<div class="col-sm-6">
+					<button onclick="StartAlgorithm()">Click me</button>
+					<h4>Points:</h4>
+					<p id="points"></p>
+					<h4>Best distance:</h4>
+					<p id="bestDistance"></p>
+					<h4>Current distance:</h4>
+					<p id="distance"></p>
+				</div>
+			</div>
+			<!-- /.row -->
+
+			<div class="row margin-b-2">
+				<div class="col-sm-6" id="preformanceAlgorithmPlot">
+					
+				</div>
+				<div class="col-sm-6">
+					<canvas width="570" height="570" id="currentAlgorithmPlot">
+				</div>
+			</div>
+			<!-- /.row -->
+
+			<hr>
+			<footer class="margin-tb-3">
+				<div class="row">
+					<div class="col-lg-12">
+						<p>Copyright &copy; Sitename 2015</p>
+					</div>
+				</div>
+			</footer>
+		</div>
+  </body>
+		<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+		<script type="text/javascript" src="genetic.js"></script>
+</html>
+
